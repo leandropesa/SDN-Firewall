@@ -6,17 +6,6 @@ El firewall instala *flow entries* permanentes en switches OpenFlow virtuales (M
 
 ---
 
-### Video de demostración
-
-> La terminal izquierda muestra el controlador POX logueando el tráfico en tiempo real.
-> La derecha muestra la CLI de Mininet donde se ejecutan tres comandos: `pingall`
-> (prueba conectividad entre todos los hosts), `h1 ping -c3 h4` (bloqueado por regla
-> bidireccional, 100% packet loss) y `h2 ping -c3 h3` (fluye normalmente, 0% packet loss,
-> 3 paquetes recibidos). El resultado `h1 -> h2 h3 X` y `h4 -> X h2 h3` en el pingall
-> confirman que el firewall está bloqueando correctamente el tráfico entre h1 y h4.
-
----
-
 ## Arquitectura
 
 ```
