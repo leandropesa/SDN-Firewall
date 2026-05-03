@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ "$1" == "-h" ]
+then
+	echo "Run './run_mn <number_switches>' to run a dynamic topology with mininet CLI. It will have number+2 total switches"
+	echo "If not specified number_switches = 0. By default"
+	exit
+fi
+
+trg=$1
+if [ -z "$trg" ]; then
+	trg=0
+fi
+echo "Creating a dynamic topology on mininet with $trg intermediate switches, total of $(($trg+2))" 
+echo "sudo mn --custom ./dynamic_topology.py --topo dynamicTopology,$trg --mac --arp --switch ovsk --controller remote"
+
+sudo mn --custom ./dynamic_topology.py --topo dynamicTopology,$trg --mac --arp --switch ovsk --controller remote

@@ -1,0 +1,10 @@
+[
+	{
+		"mac_src":"MAC2",
+		"mac_dst":"MAC5",
+		"bidireccional": true
+	},
+	{
+		"protocol":"tcp"
+	}
+]

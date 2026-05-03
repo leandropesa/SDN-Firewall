@@ -1,0 +1,14 @@
+[
+	{
+		"mac_src":"MAC2",
+		"mac_dst":"MAC4",
+		"bidireccional": true
+	},
+	{
+		"mac_src":"MAC8",
+		"dst_port":5001
+	},
+	{
+		"dst_port":80
+	}
+]

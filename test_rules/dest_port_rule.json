@@ -1,0 +1,13 @@
+[
+	{
+		"mac_src":"MAC2",
+		"mac_dst":"MAC5",
+		"bidireccional": true
+	},
+	{
+		"protocol":"QUIC"
+	},
+	{
+		"dst_port":5010
+	}
+]

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ "$1" == "-v" ]
+then
+	echo "RUN> Server python ./pox.py --verbose samples.spanning_tree redes.tp2.firewall"
+	cd pox
+	python ./pox.py --verbose samples.spanning_tree redes.tp2.firewall
+else
+	echo "RUN> Server python ./pox.py samples.spanning_tree redes.tp2.firewall"
+	cd pox
+	python ./pox.py samples.spanning_tree redes.tp2.firewall	
+fi
+

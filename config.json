@@ -1,0 +1,20 @@
+{
+	"target_switches": [
+		"00-00-00-00-00-01"
+	],
+	"block_rules": [
+		{
+			"mac_src":"00:00:00:00:00:01",
+			"mac_dst":"00:00:00:00:00:04",
+			"bidireccional": true
+		},
+		{
+			"dst_port":80
+		},
+		{
+			"mac_src":"00:00:00:00:00:01",
+			"protocol":"udp",
+			"dst_port":5001
+		}
+	]
+}
